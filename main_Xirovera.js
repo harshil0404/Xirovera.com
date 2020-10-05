@@ -1,6 +1,6 @@
 let $ = (ele) => document.querySelector(ele);
 let $$ = (ele) => document.querySelectorAll(ele);
-
+ 
 let category = $('.active').innerHTML.toLowerCase();
 
 function horizToDropMenu() {
