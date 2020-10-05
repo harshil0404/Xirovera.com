@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xirovera.com</title>
+    <link rel="stylesheet" href="./styles_ThePlaza.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Sacramento&family=Satisfy&family=Sriracha&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+    <script src="productStorage_ThePlaza.js" defer></script>
+    <script src="main_ThePlaza.js" defer></script>
+    <script src="https://kit.fontawesome.com/f5e31d8174.js" crossorigin="Harshil Soni"></script>
+</head>
+
+<body>
+    <div class="background-img">
+        <img src="./images/back_img.jpeg" alt="" class="">
+    </div>
+    <section style="z-index: 2;" id="two" class="abc">
+        <nav>
+                <div class="logo">
+                    <i class="fab fa-xing"></i>
+                    <a href="" class="logo-name">Xirovera</a>
+                </div>
+                <ul class="pages">
+                    <li>About</li>
+                    <li>TrendingShows</li>
+                    <li>Blog</li>
+                    <li>CustomerDiaries</li>
+                </ul>
+                <i class="fa fa-bars" onclick="horizToDropMenu()"></i>
+                <div onclick = "openCart()" class="bag-container">
+                    <div  class="bag-icon">
+                        <i class="fas fa-shopping-bag" style="font-size: 35px;"></i>
+                    </div>
+                    <span class="no_of_cartitems">0</span>
+                </div>
+        </nav>
+        <ul class="icons">
+            <li class="search-icon" onclick="openSearchBar()"><i class="fas fa-search"></i></li>
+            <li><i class="fab fa-twitter"></i></li>
+            <li><i class="fab fa-facebook-f"></i></li>
+            <li><i class="fab fa-instagram"></i></li>
+        </ul>
+        <input id="myInput" class="search" type="text" placeholder="Search products..."></input>
+    </section>
+    
+    <div class="para">
+        <p class="line1">
+            F R E S H &nbsp;&nbsp; S T A R T
+        </p>
+        <p class="line2">
+            NEW ARRIVALS
+        </p>
+        <p class="line3">
+            Be the first to get your hands on our latest collection. Enjoy free delevery, 
+            cash back and much more...
+        </p>
+    </div>
+    <div class="gradient">
+        <ul class="category-list">
+            <li class="active">Sale</li>
+            <li class="">Clothes</li>
+            <li class="">Shoes</li>
+            <li class="">EyeWear</li>
+            <li class="">Electronics</li>
+        </ul>
+        <!-- all the images are loaded here -->
+        <main></main>
+    </div>
+    <!-- whole cart page is displayed here -->
+    <section id="one" class="cart-section">
+        <button onclick="closeCart()" class="close-cart">X</button>
+        <div class="cart-header">
+            <h4 class="product">Product</h4>
+            <h4 class="price">Price</h4>
+            <h4 class="quantity">Quantity</h4>
+            <h4 class="total">Total</h4>
+        </div>
+        <hr>
+        <div class="cart-items"></div>
+        <hr>
+        <div class="cart-cost">0</div>
+    
+    </section>
+    <div class="crown">CREATED BY - HARSHIL SONI</div>
+</body>
+</html>
